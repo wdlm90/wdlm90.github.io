@@ -52,6 +52,24 @@
             2015-2016
 		</div>
 	</div>
+	
+	<script src="/sm2/script/soundmanager2.js"></script>
+	<script>
+	soundManager.setup({
+  	url: '/sm2/swf',
+  	onready: function() {
+    	var mySound = soundManager.createSound({
+      	id: 'aSound',
+      	url: '/music/an.mp3'
+    	});
+	 mySound.play();
+  	},
+  	ontimeout: function() {
+    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+  	}
+	});
+	</script>
+
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
