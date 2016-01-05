@@ -52,7 +52,8 @@
             2015-2016
 		</div>
 	</div>
-	
+	<img src=/images/1.jpg>
+        <img src=/images/2.jpg>
 	<script src="/sm2/script/soundmanager2.js"></script>
 	<script>
 	soundManager.setup({
@@ -69,39 +70,6 @@
   	}
 	});
 	</script>
-      
-<ul id="img">
-<li><img src="/images/1.jpg" />1</li>
-<li><img src="/images/2.jpg" />2</li>
-<li><img src="/images/3.jpg" />3</li>
-</ul>
-    <script type="text/javascript">
-    function(){
-	var i=0;
-        var $=function(ID){return document.getElementById(ID);};
-        var timer=null,speed=500;
-	$("img").getElementsByTagName("li")[0].style.display="block";
-	;(function(){
-        if(i>=$("img").getElementsByTagName("li").length){
-        for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
-        $("img").getElementsByTagName("li")[j].style.display="none";
-        }
-        i=1;
-        $("img").getElementsByTagName("li")[0].style.display="block";
-        }else {
-        for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
-        if(j===i){
-        $("img").getElementsByTagName("li")[j].style.display="block";
-        }else{
-        $("img").getElementsByTagName("li")[j].style.display="none";
-        }
-        }
-        i++;
-        }
-        timer=setTimeout(arguments.callee,speed);
-        })();
-        })();
-    </script>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
